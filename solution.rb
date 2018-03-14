@@ -1,6 +1,6 @@
 require "sinatra"
 
-get '/' do
+get '/makers' do
   unless params[:nombre].eql("")
     "<h1>Hola #{params[:nombre]}!</h1>"
   else
